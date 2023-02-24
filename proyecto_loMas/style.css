@@ -1,0 +1,146 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+}
+
+/*Header*/
+.fondo {
+
+
+    background: hsla(282, 100%, 4%, 1);
+
+    background: linear-gradient(0deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 41%, hsla(274, 100%, 47%, 1) 79%, hsla(252, 89%, 78%, 1) 100%);
+
+    background: -moz-linear-gradient(0deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 41%, hsla(274, 100%, 47%, 1) 79%, hsla(252, 89%, 78%, 1) 100%);
+
+    background: -webkit-linear-gradient(0deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 41%, hsla(274, 100%, 47%, 1) 79%, hsla(252, 89%, 78%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0E0014", endColorstr="#6A00F4", GradientType=1);
+
+
+    padding: 2vw;
+
+}
+
+/* index.html*/
+
+.btn.btn-outline-success {
+    --bs-btn-color: black;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7700ff;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+
+    height: 70px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Carrusel
+*/
+.carousel {
+    background-color: black;
+
+
+}
+
+
+
+/*Imagenes*/
+
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    background-color: black;
+
+
+}
+
+.grid-item {
+    margin: 20px;
+    width: 70%;
+
+
+}
+
+.texto {
+    color: white;
+}
+
+
+/* aplicaciones.html*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    border: 3px solid green;
+    color: #7700ff;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item {
+    margin: p;
+
+}
+
+.img-app {
+    width: 300px;
+}
+
+/*Footer*/
+footer {
+    background: hsla(282, 100%, 4%, 1);
+
+    background: linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0E0014", endColorstr="#6A00F4", GradientType=1);
+
+
+
+    flex: 0 0 auto;
+
+
+
+}
