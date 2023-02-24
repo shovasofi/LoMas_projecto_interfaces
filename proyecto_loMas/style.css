@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: black;
 
 
 }
@@ -28,6 +29,14 @@ body {
 
     padding: 2vw;
 
+}
+
+.navbar-nav {
+    margin: 20px;
+}
+
+.logo{
+    box-shadow: 20px 30px white;
 }
 
 /* index.html*/
@@ -54,23 +63,20 @@ body {
 .contenedor {
     display: flex;
     flex-direction: column;
+    background-color: black;
 
 }
 
 /* Carrusel
 */
 .carousel {
-    background-color: black;
-
+    margin-top: 30px;
 
 }
 
 
 
 /*Imagenes*/
-
-
-
 .grid-container {
 
     display: grid;
@@ -81,48 +87,116 @@ body {
 
 }
 
+h3{
+    margin: 50px;
+}
+
 .grid-item {
     margin: 20px;
     width: 70%;
 
 
 }
-
-.texto {
-    color: white;
+.imgC{
+    width: 30%;
+    height:50%;
 }
 
+.grid-item:hover{
+    transform: scale(1.2);
+}
+.texto {
+    color: white;
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .grid-container {
+        display: grid;
+      grid-template-columns: auto auto auto auto auto;
+        
+        background-color: black;
+
+
+    }
+
+    .grid-item {
+        margin: 20px;
+        width: 200px;
+        
+
+
+    }
+    .imgC{
+        width: 500px;
+        height:600px;
+    }
+
+}
 
 /* aplicaciones.html*/
 
 h1 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    border: 3px solid green;
-    color: #7700ff;
-}
-
-h3 {
+    background-color: black;
     color: white;
 }
+
+
 
 p {
     color: white;
     font-family: 'Playfair Display', serif;
+    text-align: justify;
+    padding: 5%;
+
 }
 
-.container {
+.container-app {
     display: grid;
     grid-template-columns: auto auto;
+   
+    background-color: black;
+
 }
 
 .item {
-    margin: p;
+
+    margin: 30px;
+    color: white;
 
 }
 
+@media screen and (max-width: 699px) {
+    .container-app {
+        display: block;
+        grid-template-columns: auto auto;
+        grid-auto-flow: inherit;
+        background-color: black;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container-app {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+        background-color: black;
+
+    }
+
+}
 .img-app {
     width: 300px;
+    box-shadow: 10px 10px  white ;
+
+}
+.img-app:hover{
+   
+    transform: scale(1.1);
 }
 
 /*Footer*/
