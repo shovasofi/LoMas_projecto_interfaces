@@ -35,11 +35,18 @@ body {
     margin: 20px;
 }
 
-.logo{
-    box-shadow: 20px 30px white;
+
+#nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: green;
+
 }
 
-/* index.html*/
+.buscar {
+    height: 34px;
+    width: 10px;
+}
 
 .btn.btn-outline-success {
     --bs-btn-color: black;
@@ -57,8 +64,16 @@ body {
     --bs-btn-disabled-border-color: #198754;
     --bs-gradient: none;
 
-    height: 70px;
+    height: 40px;
 }
+
+.btn img {
+    height: 30px;
+}
+
+/* index.html*/
+
+
 
 .contenedor {
     display: flex;
@@ -70,10 +85,16 @@ body {
 /* Carrusel
 */
 .carousel {
-    margin-top: 30px;
+   
+    margin: 10px 40px 10px 40px;
 
 }
 
+
+
+.carousel-img{
+    width:100% ;
+}
 
 
 /*Imagenes*/
@@ -83,12 +104,13 @@ body {
     grid-template-columns: auto auto auto;
     justify-content: center;
     background-color: black;
+    
 
 
 }
 
-h3{
-    margin: 50px;
+h3 {
+    text-align: center;
 }
 
 .grid-item {
@@ -97,14 +119,16 @@ h3{
 
 
 }
-.imgC{
+
+.imgC {
     width: 30%;
-    height:50%;
+    height: 50%;
 }
 
-.grid-item:hover{
+.grid-item:hover {
     transform: scale(1.2);
 }
+
 .texto {
     color: white;
     display: none;
@@ -113,9 +137,9 @@ h3{
 @media screen and (min-width: 1000px) {
     .grid-container {
         display: grid;
-      grid-template-columns: auto auto auto auto auto;
-        
-        background-color: black;
+        grid-template-columns: auto auto auto auto auto;
+
+
 
 
     }
@@ -123,48 +147,55 @@ h3{
     .grid-item {
         margin: 20px;
         width: 200px;
-        
+
 
 
     }
-    .imgC{
+
+    .imgC {
         width: 500px;
-        height:600px;
+        height: 600px;
     }
 
 }
 
 /* aplicaciones.html*/
 
-h1 {
+.titulo {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    background-color: black;
     color: white;
+    background-color: black;
+    margin-bottom: 0rem;
+    padding: 30px;
+
 }
 
 
 
-p {
-    color: white;
+div p {
+   
     font-family: 'Playfair Display', serif;
     text-align: justify;
     padding: 5%;
+    margin-top: 30px;
 
 }
 
 .container-app {
     display: grid;
     grid-template-columns: auto auto;
-   
     background-color: black;
+
 
 }
 
 .item {
 
-    margin: 30px;
+    margin: 50px;
     color: white;
+    padding: 10px;
+   
 
 }
 
@@ -183,22 +214,72 @@ p {
     .container-app {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        
+
         background-color: black;
 
     }
 
 }
+
 .img-app {
     width: 300px;
-    box-shadow: 10px 10px  white ;
+    box-shadow: 10px 10px white;
 
 }
-.img-app:hover{
-   
+
+.img-app:hover {
+
     transform: scale(1.1);
 }
 
+.card{
+    background-color: rgb(96, 109, 231);
+    color: white;
+    border-radius: 10px 2px 40px;
+    margin-top: 25px;
+    margin-left: 30px;
+    box-shadow: white;
+    width: 100%;
+    background: hsla(282, 100%, 4%, 1);
+
+    background: linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(270deg, hsla(282, 100%, 4%, 1) 0%, hsla(266, 100%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0E0014", endColorstr="#6A00F4", GradientType=1);
+
+
+}
+
+/* profesiones.html*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+}
+.flex-item-derecham{
+    flex: 20%;
+}
+.card-body span{
+    text-align: center;
+    
+    
+
+}
+
+h3{
+    color: white;
+}
+
+
+.grid-item:hover {
+    transform: scale(1.2);
+}
 /*Footer*/
 footer {
     background: hsla(282, 100%, 4%, 1);
