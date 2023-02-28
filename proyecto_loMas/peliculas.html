@@ -7,17 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoMas</title>
-    <script src="script.js"></script>
+   <!-- 
+    <script src="script.js"></script>-->
     <link rel="stylesheet" href="style.css">
     <!-- bootStrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <script type="text/javascript" src="jquery.js"></script>
-    <!-- bootStrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+
 
 
 
@@ -33,8 +31,8 @@
     </script>
 
     <link rel="icon" href="img/camara-de-cine (1).png">
-   
-    
+
+
 
 </head>
 
@@ -75,58 +73,85 @@
         </div>
         <!-- Carrusel-->
         <!-- Imagenes-->
+
         <div class="grid-container">
 
-            <img src="img/Avatar2.jpg" alt=" imagen de pelicula avazar 2v" class="grid-item 1">
+            <a href="pelicula-chihiro.html">
+                <img src="img/El_viaje_de_Chihiro-348587850-mmed.jpg" alt="imagen de cartelera, El viaje de Chihiro"
+                    class="grid-item imgP imgE">
+
+            </a>
+
+            <a href=" pelicula-avatar.html">
+                <img src="img/Avatar2.jpg" alt=" imagen de pelicula avazar 2" class="grid-item imgP imgA">
+            </a>
+            <a href=" pelicula-dragon.html">
+                <img src="img/como-entrenar-a-tu-dragon-3-.jpg"
+                    alt="imagen de cartelera de la pelicula como entrenar a tu dragón dos"
+                    class="grid-item imgP imgDragon">
+
+            </a>
 
 
-            <img src="img/como-entrenar-a-tu-dragon-3-.jpg"
-                alt="imagen de cartelera de la pelicula como entrenar a tu dragón dos" class="grid-item">
+
+        </div>
+
+        <div class="texto textoA">
+            <h4>Avatar</h4>
+            En Avatar 2: el sentido del agua, el tiempo es importante. Diez años han transcurrido desde que Jake
+            Sully (Sam Worthington) recibiera el prodigio de Eywa en el Árbol de la Vida. Su identidad humana
+            desapareció o, mejor dicho, evolucionó a una comunión total con Pandora.
+
+            Su mirada es la de un Na’vi y esa es la gran revelación que el argumento escrito por James Cameron, Rick
+            Jaffa y Amanda Silver deja clara. El espíritu aventurero del personaje es un reflejo de su planeta
+            adoptivo.
+
+            También del misterio cálido que envuelve cada elemento que le rodea. Tal y como la primera película
+            manifestó en el 2009, nada en este entorno poderoso está desvinculado del centro mismo de la vida. Nada
+            está fuera del asombro que envuelve y sostiene la narración como una travesía hacia un paraje de
+            desconcertante belleza.
+        </div>
+        <div class="texto textoC">
+            <h4>Como entrenar a tu dragón</h4>
+            ‘Cómo entrenar a tu dragón 3’ es una película que se plantea dos grandes preguntas. La primera es a
+            nivel narrativo y sirve para encontrar una forma de justificar que los dragones desaparecieran sin dejar
+            rastro de nuestro planeta, pero la que ahora nos interesa tiene una vertiente más emocional. Me refiero
+            a la que durante la campaña promocional de la película se ha calificado como el interés romántico de
+            Desdentao.
+        </div>
+        <div class="texto textoE">
+            <h4>El viaje de Chihiro</h4>
+            Este largometraje presenta a una niña de 12 años que viaja con sus padres debido a una mudanza. En medio
+            de este viaje, Chihiro quedará atrapada en otro mundo distinto del real, en el que tendrá que conseguir
+            su libertad y, asimismo, la de sus padres, para poder volver a su propio mundo.
+        </div>
+
+        <script>
+            $(document).ready(function () {
+
+                $(".imgA").hover(function () {
+                    $(".textoA").toggle();
+                })
+
+                $(".imgDragon").hover(function () {
+                    $(".textoC").toggle();
+                })
 
 
-            <img src="img/El_viaje_de_Chihiro-348587850-mmed.jpg" alt="imagen de cartelera, El viaje de Chihiro"
-                class="grid-item">
-
-            <div class="texto">
-                En Avatar 2: el sentido del agua, el tiempo es importante. Diez años han transcurrido desde que Jake
-                Sully (Sam Worthington) recibiera el prodigio de Eywa en el Árbol de la Vida. Su identidad humana
-                desapareció o, mejor dicho, evolucionó a una comunión total con Pandora.
-
-                Su mirada es la de un Na’vi y esa es la gran revelación que el argumento escrito por James Cameron, Rick
-                Jaffa y Amanda Silver deja clara. El espíritu aventurero del personaje es un reflejo de su planeta
-                adoptivo.
-
-                También del misterio cálido que envuelve cada elemento que le rodea. Tal y como la primera película
-                manifestó en el 2009, nada en este entorno poderoso está desvinculado del centro mismo de la vida. Nada
-                está fuera del asombro que envuelve y sostiene la narración como una travesía hacia un paraje de
-                desconcertante belleza.
-            </div>
-            <div class="texto">
-                ‘Cómo entrenar a tu dragón 3’ es una película que se plantea dos grandes preguntas. La primera es a
-                nivel narrativo y sirve para encontrar una forma de justificar que los dragones desaparecieran sin dejar
-                rastro de nuestro planeta, pero la que ahora nos interesa tiene una vertiente más emocional. Me refiero
-                a la que durante la campaña promocional de la película se ha calificado como el interés romántico de
-                Desdentao.
-            </div>
-            <div class="texto">
-                Este largometraje presenta a una niña de 12 años que viaja con sus padres debido a una mudanza. En medio
-                de este viaje, Chihiro quedará atrapada en otro mundo distinto del real, en el que tendrá que conseguir
-                su libertad y, asimismo, la de sus padres, para poder volver a su propio mundo.
-            </div>
-            <script>
-                $(document).ready(function () {
-                    var numero = 1;
-                    $("img").click(function () {
-                        $(".texto").toggle();
-                    })
+                $(".imgE").hover(function () {
+                    $(".textoE").toggle();
                 })
 
 
 
-            </script>
+            })
 
-        </div>
-        <!-- Imagenes-->
+
+
+        </script>
+
+    </div>
+    <!-- Imagenes-->
     </div>
 
     <!-- Footer-->

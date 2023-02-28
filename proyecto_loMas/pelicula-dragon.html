@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shova Shrestha">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analisis de la pelicula 'El viaje de Chihiro'">
+    <meta name="keywords" content="Pelicula chihiro series">
+    <title>LoMas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- bootStrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="icon" href="img/camara-de-cine (1).png">
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Header-->
+    <div id="header"></div>
+
+    <!-- Header-->
+    <div class="container">
+        <h1 class="titulo"> <b>Como entrenar a tu dragon 3 </b></h1>
+        <div class="row">
+
+            <div class="col-3" id="block">
+
+                <label class="buscar-genero"> <b> Busqueda por genero </b></label>
+                
+                <form >
+                    <label for="generos">Elige el Genero</label>
+                    <select name="generos" id="genero">
+                      <option value="accion">Acción</option>
+                      <option value="aventura">Aventura</option>
+                      <option value="animacion">Animación</option>
+                      <option value="fantasia">Fantasía</option>
+                      <option value="ciencia">Ciencia ficción</option>
+                      <option value="comedia">Comedia</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+                  <form >
+                    <label for="cars">Elige por fecha </label>
+                    <select name="cars" id="cars">
+                      <option value="dosmil">2000</option>
+                      <option value="dosmiluno">2001</option>
+                      <option value="dosmildos">2002</option>
+                      <option value="dosmiltres">2003</option>
+                      <option value="dosmilcuatro">2004 </option>
+                      <option value="dosmilcinco">2005</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+
+                <label class=""> <b>Comentarios </b> </label>
+                <input type="text" id="coment" value="comentario">
+                <button type="submit" class="enviar" onclick="añadirComentario()">
+                    <img class="img-coment" src="imagenes/chat.png" alt="img de comentario">
+                </button>
+            </div>
+
+            <div class="col-9 analisis" id="block">
+                <img src="img/como-entrenar-a-tu-dragon-3-.jpg" class="img-pel"
+                    alt="portada de la pelicula de como entrenar a tu dragon 3">
+
+                <div>
+                    <h3 class="titulo ">Reseña</h3>
+                    <p class="reseña">
+                        "Cómo entrenar a tu dragón 3" es una película que se plantea dos grandes preguntas. La primera
+                        es a
+                        nivel narrativo y sirve para encontrar una forma de justificar que los dragones desaparecieran
+                        sin dejar
+                        rastro de nuestro planeta, pero la que ahora nos interesa tiene una vertiente más emocional. Me
+                        refiero
+                        a la que durante la campaña promocional de la película se ha calificado como el interés
+                        romántico de
+                        Desdentao.
+                        <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DWXJdezkThk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="titulo">Análisis</h3>
+                    <p class="reseña">
+
+                        Fui a ver Cómo entrenar a tu dragón 3 invitado por mis nietos, sin mayores expectativas. Me
+                        encontré con una película de animación en 3D, llena de curiosas aventuras escenificadas en
+                        fantásticos lugares, bien distintos a los que estamos acostumbrados en nuestros países de
+                        América Latina. Es esta la tercera entrega de una serie producida por DreamWorks, basada en una
+                        historia escrita por Cressida Cowell. He visto que todavía permanece en las carteleras de las
+                        salas locales, tan acostumbradas al paso fugaz de las producciones, incluso cuando se trata de
+                        algunas que son de buena calidad. Pienso que ello tiene que ver con su muy buena calidad como
+                        película de animación.
+                        <br><br>
+                        Un aspecto a destacar en la historia, naturalmente, es lo referido a los dragones. Se los
+                        presenta como unos seres muy identificados con los humanos, quienes disfrutan de su lealtad, de
+                        sus servicios y de sus capacidades como medios de transporte en la paz y en la guerra. A cambio
+                        de ello, son tratados con cariño y domesticados, como si se tratara de amistosos caballos
+                        voladores. Es espectacular el trabajo de diseño que se hace en estas producciones, creando seres
+                        de gran variedad de formas y de colores, se deslizan por el espacio con gracia extrema,
+                        gesticulan y dejan ver sentimientos, transmitiendo empatía a los espectadores. Es impactante la
+                        magia del cine, que nos lleva a identificarnos con mundos enteramente irreales e imposibles,
+                        como si los estuviéramos tocando y viviendo. Más sorprendente, todavía, si caemos en cuenta de
+                        que se trata de animaciones, que, aunque sean extremadamente realistas y perfectas, bien sabemos
+                        que son artilugios imaginativos.
+                        <br> <br> <br>
+                        ¿En qué se entrena a un dragón y quién entrena a los dragones? En estos mundos imaginarios los
+                        dragones sufren una amenaza terrible, que seguramente es un preludio de su inevitable extinción.
+                        Existe un grupo humano que los quiere esclavizar, que los quiere reducir a una existencia de
+                        jaulas y de encerramientos; sus antagonistas son los miembros de otro grupo humano que los
+                        cuida, que los libera, que disfruta de su lealtad y de su servicio y que los quiere educar. De
+                        ello ya han tratado las dos películas anteriores de esta saga. En este último episodio los
+                        humanos protectores se han dado cuenta de que hay que viajar hacia las míticas tierras
+                        originales en las cuales los dragones son seres libres, alejados de las amenazas y de las
+                        protecciones humanas. Por ello deben entrenar a sus dragones (y entrenarse a sí mismos) y
+                        dirigirse con ellos hacia allá, escapando tanto de las amenazas de los humanos esclavistas, como
+                        de la superpoblación que se ha generado cuando se juntan, en tierras estrechas, humanos y
+                        dragones.
+                        <br> <br> <br>
+                        Pero el entrenamiento especial es el del enamoramiento. El personaje-dragón principal recibe
+                        toda una serie de efectivas lecciones en las artes de la conquista amorosa, cuando aparece en el
+                        panorama una hermosa criatura, la dragona Furia Nocturna. Su estilizado cuerpo, de color blanco,
+                        se mueve ágilmente por el espacio, y los dos protagonizan danzas amorosas al son de una música
+                        genuinamente espectacular.
+                        <br> <br> <br>
+
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer-->
+
+    <div id="footer"></div>
+    <!-- Footer-->
+</body>
+
+</html>

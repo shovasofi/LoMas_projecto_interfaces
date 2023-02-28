@@ -1,0 +1,36 @@
+[
+    {
+        "titulo": "Avatar",
+        "descripcion": "",
+        "fecha": 2022,
+        "imagen": "/Avatar2.jpg"
+
+
+    },
+    {
+        "titulo": "Como entrenar a un dragón 2",
+        "descripcion": "",
+        "fecha": 2022,
+        "imagen": "/como-entrenar-a-tu-dragon-3-.jpg"
+
+
+    },
+
+    {
+        "titulo": "El viaje de chihiro",
+        "descripcion": "",
+        "fecha": 2022,
+        "imagen": "/El_viaje_de_Chihiro-348587850-mmed.jpg"
+
+
+    },
+
+    {
+        "titulo": "Apocalypto",
+        "descripcion": "",
+        "fecha": 2022,
+        "imagen": "/apocalypto.jpg"
+
+
+    }
+]

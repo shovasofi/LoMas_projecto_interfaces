@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shova Shrestha">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analisis de la pelicula 'El viaje de Chihiro'">
+    <meta name="keywords" content="Pelicula chihiro series">
+    <title>LoMas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- bootStrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="icon" href="img/camara-de-cine (1).png">
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Header-->
+    <div id="header"></div>
+
+    <!-- Header-->
+    <div class="container">
+        <h1 class="titulo">Westworld</h1>
+        <div class="row">
+
+            <div class="col-3" id="block">
+                <label class="buscar-genero"> <b> Busqueda por genero </b></label>
+                
+                <form >
+                    <label for="generos">Elige el Genero</label>
+                    <select name="generos" id="genero">
+                      <option value="accion">Acción</option>
+                      <option value="aventura">Aventura</option>
+                      <option value="animacion">Animación</option>
+                      <option value="fantasia">Fantasía</option>
+                      <option value="ciencia">Ciencia ficción</option>
+                      <option value="comedia">Comedia</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+                  <form >
+                    <label for="cars">Elige por fecha </label>
+                    <select name="cars" id="cars">
+                      <option value="dosmil">2000</option>
+                      <option value="dosmiluno">2001</option>
+                      <option value="dosmildos">2002</option>
+                      <option value="dosmiltres">2003</option>
+                      <option value="dosmilcuatro">2004 </option>
+                      <option value="dosmilcinco">2005</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+
+                <label class=""> <b>Comentarios </b> </label>
+                <input type="text" id="coment" value="comentario">
+                <button type="submit" class="enviar" onclick="añadirComentario()">
+                    <img class="img-coment" src="imagenes/chat.png" alt="img de comentario">
+                </button>
+            </div>
+
+            <div class="col-9 analisis" id="block">
+                <img src="img/Westworld_Serie-large.jpg" class="img-pel" alt="portada de la serie westWorld">
+
+                <div>
+                    <h3 class="titulo ">Reseña</h3>
+                    <p class="reseña">
+
+                        Está ambientada en un parque temático futurista cuyas instalaciones cuentan con seres biológicos
+                        programados que pueden introducirse en cualquier tipo de fantasía por muy oscura que sea. Los
+                        "nuevos
+                        visitantes" son humanos que pagan ingentes sumas de dinero para internarse en esos mundos y
+                        hacer
+                        realidad sus sueños en una experiencia 100% inmersiva. Esto incluye matar, sexo, diversión y
+                        experimentar el oeste americano en primera persona.
+
+                        Los creadores de dicho lugar tienen algo en lo que pensar: sus criaturas empiezan a revelarse
+                        contra
+                        ellos acusándolos de haber creado "la cárcel de sus pecados". La última actualización de su
+                        programación
+                        ha consistido en inducirles "ensoñaciones", lo que les ha permitidp experimentar un salto
+                        exponencial:
+                        tienen la capacidad de mentir, así que han alcanzado un nivel de abstracción que puede llegar a
+                        hacerlos
+                        "iguales" a los seres humanos.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7GCDMuSYcqM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="titulo">Análisis</h3>
+                    <p class="reseña">
+                        Cuando uno dispone (servidor no todos los días) de 100 millones de dólares para los diez
+                        primeros capítulos de una serie de televisión, debe dar un poco de vértigo. Y más si te la
+                        encarga la HBO. Y más si tienes, según dicen, que llenar el enorme hueco que va a dejar "Juego
+                        de Tronos".
+                        Así es que el matrimonio Nolan, hermano y cuñada de Christopher se ponen al oficio de resucitar,
+                        con perdón, al gran Michael Crichton, que no lo hizo nada mal en el 73 rodando su propia novela
+                        del mismo titulo con un presupuesto infinitamente inferior y en menos de hora y media.
+                        <br><br>
+                        Los Nolan, huelga decirlo, no tienen a George R. R. Martin a quien David Benioff y D.B. Weiss no
+                        tienen nada más y nada menos que seguirle los pasos y la trama principal de Crichton no da más
+                        que para dos o tres buenos capítulos de "Black Mirror". ¿Que hacemos entonces con 100 millones y
+                        once horas de metraje a parte de imitar el logo de la desprestigiada Wolswagen?. Que no cunda el
+                        pánico, tenemos a J.J. Abrams en la producción, maestro del relleno, del buñuelo de viento del
+                        misterio y de los flashbacks a granel. Nos va a faltar tiempo en 7 temporadas más.
+                        Nota: en la biblia del buen cineasta debía ser pecado mortal utilizar más de un flashback por
+                        hora rodada.
+                        <br><br>
+                        Dicho esto, una vez presentados los personajes y lucido el presupuesto en vestuario, gadgets y
+                        un inconmensurable Castle Valley en Utah digno del mejor Ford comienza el laberinto.
+                        La oportuna trama existencialista dado los tiempos que corren hoy día con la robótica y de la
+                        que Crichton fue visionario comienza funcionando bien hasta que se le acaban las pilas o nos
+                        cansamos de que los muñecos (ninguno le hace ni sombra a Yul Brinner, del que vemos la silueta
+                        de su personaje en el episodio 5 como pálido homenaje) repitan una y otra vez su cantinela de
+                        quien soy y a qué he venido y el mito de Frankenstein se perpetúe una vez más de forma más que
+                        previsible.
+                        Lo demás es paja, relleno marca Abrams por mucho que Hopkins sea capaz de hacernos creer en la
+                        guía telefónica si es preciso y el gran Ed Harris se vista del hombre del saco.
+                        <br><br>
+                        Las subtramas de western son penosas y el casting de secundarios muy desequilibrado y con poca
+                        empatia en general. Los giros de los personajes están cogidos con pinzas, machaconamente
+                        repetitivos, y con justificaciones que rayan el absurdo cuando las hay, cosa que a Abrams se le
+                        suele olvidar.
+                        Las dosis de violencia y sexo imprescindibles para los canales de pago y poco más.
+                        "Westworld" si nuevas temporadas no lo remedian, podrá hacer tanta o más caja que cualquiera de
+                        las series de calidad de HBO, pero no creo que Tony Soprano, los policías de "The Whire" o
+                        incluso las familias de los Lannister y cia le dejen un hueco en sus tronos.
+                        <br><br>
+                        PD: De lo mejor, un Hopkins aburrido tomándose unos whiskys en el subsuelo con el viejo y
+                        destartalado Will Bill Hickok que ya no está para parques temáticos al estilo del show de
+                        Buffalo Bill
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer-->
+
+    <div id="footer"></div>
+    <!-- Footer-->
+</body>
+
+</html>

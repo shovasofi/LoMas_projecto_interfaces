@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shova Shrestha">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analisis de la pelicula 'El viaje de Chihiro'">
+    <meta name="keywords" content="Pelicula chihiro series">
+    <title>LoMas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- bootStrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="icon" href="img/camara-de-cine (1).png">
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Header-->
+    <div id="header"></div>
+
+    <!-- Header-->
+    <div class="container">
+        <h1 class="titulo">Goblin</h1>
+        <div class="row">
+
+            <div class="col-3" id="block">
+
+                <label class="buscar-genero"> <b> Busqueda por genero </b></label>
+                
+                <form >
+                    <label for="generos">Elige el Genero</label>
+                    <select name="generos" id="genero">
+                      <option value="accion">Acción</option>
+                      <option value="aventura">Aventura</option>
+                      <option value="animacion">Animación</option>
+                      <option value="fantasia">Fantasía</option>
+                      <option value="ciencia">Ciencia ficción</option>
+                      <option value="comedia">Comedia</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+                  <form >
+                    <label for="cars">Elige por fecha </label>
+                    <select name="cars" id="cars">
+                      <option value="dosmil">2000</option>
+                      <option value="dosmiluno">2001</option>
+                      <option value="dosmildos">2002</option>
+                      <option value="dosmiltres">2003</option>
+                      <option value="dosmilcuatro">2004 </option>
+                      <option value="dosmilcinco">2005</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+                <label class=""> <b>Comentarios </b> </label>
+                <input type="text" id="coment" value="comentario">
+                <button type="submit" class="enviar" onclick="añadirComentario()">
+                    <img class="img-coment" src="imagenes/chat.png" alt="img de comentario">
+                </button>
+            </div>
+
+            <div class="col-9 analisis" id="block">
+                <img src="img/goblin.png" class="img-pel" alt="portada de la serie goblin">
+
+                <div>
+                    <h3 class="titulo ">Reseña</h3>
+                    <p class="reseña">
+
+                        “Kim Shin es un guerrero invencible y un general asignado del antiguo reino de Goryeo. Sin
+                        embargo,
+                        cuando regresó de la batalla fue traicionado por el joven príncipe, que por las influencias de
+                        su
+                        consejero real, manda a asesinar a Kim Shin. El muere a causa de su propia espada, pero le fue
+                        dada una
+                        segunda oportunidad de vivir. Sin embargo, pronto encuentra que es una maldición, ya que esto
+                        significaba ver morir a todos los que ama, sin olvidar ninguna de esas muertes. El único que
+                        podría
+                        sacar la espada de su cuerpo y dejarlo por fin descansar en paz, es una chica misteriosa, que
+                        puede ver
+                        fantasmas y que sólo se conoce como la novia del Ser Inmortal.
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S94ukM8C17A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="titulo">Análisis</h3>
+                    <p class="reseña">
+
+                        Hoy os vamos a hablar de Goblin. Este maravilloso kdrama es para mí, sin duda, el mejor del año
+                        2017. No solo creo que es el mejor kdrama del año 2017, sino que sin duda la guionista es una de
+                        las mejores, conocida por sus excelentes trabajos anteriores, como son Descendants of the Sun y
+                        My love from the stars, eso sí que es superarse a sí misma.
+
+                        ¿Creeis en las vidas pasadas? Este drama nos dice que todos tenemos 4 vidas, muchos han de estar
+                        pagando el precio de sus pecados cometidos en vidas anteriores y otros cuantos están en sus
+                        primeras vidas.
+                        <br><br>
+                        Kim Shin ( Gong Yoo ) es un general de Goryeo invencible en las guerras, pero el joven rey Wang
+                        Yeo ( Kim Min-Jae ) es un joven rey, que a su corta edad tiene en sus hombros el peso de su
+                        nación y no tendrá a los mejores consejeros.
+
+                        El Rey Wang Yeo está celoso de Kim Shin, porque según sus consejeros, si sigue ganando guerras y
+                        el respeto del pueblo, puede que consiga el trono, por esta razón el joven rey lo mata con su
+                        propia espada..
+
+                        Tras unos días Kim Shin se convierte en un Goblin (Duende), poseyendo una vida inmortal. Al
+                        principio, cree que ha sido bendecido, pero con el paso del tiempo se da cuenta de que está
+                        maldito.
+
+                        Todas las decisiones que tomaron en esta época serán decisivas para sus vidas futuras. El
+                        general Kim Shin ha sido condenado, ha de pagar muy alto el precio de haberle quitado la vida a
+                        tantas personas. Su castigo es ser inmortal, un Goblin para ser más exactos, que vivirá por toda
+                        la eternidad hasta que encuentre a la novia del Goblin, una chica humana quién será capaz de ver
+                        la espada que en él tiene alojada en el pecho, retirarsela y así terminar con su maldición.
+                        Mientras tanto, verá a morir a cada uno de las personas cercanas a él, llevará con él sus
+                        memorias y será un Dios solitario entre los vivos.
+                        <br><br>
+
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer-->
+
+    <div id="footer"></div>
+    <!-- Footer-->
+</body>
+
+</html>

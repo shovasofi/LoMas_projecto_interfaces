@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>LoMaximo</title>
     <meta name="author" content="Shova Shrestha">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoMas</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,10 +24,11 @@
         });
     </script>
     <style>
-        body {
+        body{
             background-color: black;
         }
     </style>
+
     <link rel="icon" href="img/camara-de-cine (1).png">
 </head>
 
@@ -39,103 +40,99 @@
 
     <!-- contenido-->
 
-    <div class="flex">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" id="block">
 
-        <div class="flex-item-izquierda">
-            <h1 class="titulo"> Profesiones del sector audiovisual</h1>
-            <h3>Departamento Dirección </h3>
-            <div class="grid-container">
+                <input type="text" id="coment">
+                <button type="submit" class="enviar" onclick="añadirComentario()">
+                    <img class="img-coment" src="imagenes/chat.png" alt="img de comentario">
+                </button>
 
-
-                <div class="card grid-item " style="width: 18rem;">
-                    <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
-                    <div class="card-body">
-                        <span> <b> Dirección</b> </span>
-                        <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la producción
-                            deciden
-                            qué se rueda, cuándo y en qué orden.</p>
-                    </div>
-                </div>
-
-                <div class="card grid-item " style="width: 18rem;">
-                    <img src="imagenes/director-de-cine.png" class="cHeaderard-img-top" alt="...">
-                    <div class="card-body">
-                        <span> <b> Director/a Realizador(series)</b> </span>
-                        <p class="card-text">El encargado de pasar la historia del papel a la pantalla poniendo su
-                            visión al
-                            servicio del resto de departamentos.</p>
-                    </div>
-                </div>
-
-
-                <div class="card grid-item " style="width: 18rem;">
-                    <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
-                    <div class="card-body">
-                        <span> <b> Ayudante de Dirección de Cine</b> </span>
-                        <p class="card-text"> Es la mano derecha del director de un proyecto audiovisual (serie,
-                            película...).
-                            Este profesional ayudará a que el proyecto que el director tenga en mente salga adelante
-                            según
-                            lo
-                            acordado, en unos tiempos y ritmos de rodaje previstos .</p>
-                    </div>
-                </div>
-
-                <div class="card grid-item " style="width: 18rem;">
-                    <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
-                    <div class="card-body">
-                        <span> <b> VFX</b> </span>
-                        <p class="card-text">El supervisor de VFX se encarga de que lo que se rueda sirva para poder
-                            llevar
-                            a
-                            cabo una postpo sin contratiempos</p>
-                    </div>
-                </div>
-
-                <div class="card grid-item " style="width: 18rem;">
-                    <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
-                    <div class="card-body">
-                        <span> <b> ARTE</b> </span>
-                        <p class="card-text">Diseñan/eligen tanto los decorados como el atrezo de los personajes,
-                            velando
-                            siempre por la unidad estilística de la historia y el raccord.
-
-                        </p>
-                    </div>
-                </div>
 
             </div>
+            <div class="col-9">
+                <h1 class="titulo"> Profesiones del sector audiovisual</h1>
+                <h3 class="titulo">Departamento Dirección </h3>
+                <p class="desaparecio"> Manejan los tiempos basándose en el plan de rodaje. Junto con la
+                    producción
+                    deciden
+                    qué se rueda, cuándo y en qué orden.</p>
+                <div class="grid-container-profesiones">
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine.png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Director/a Realizador(series)</b> </span>
+                            <p class="card-text">El encargado de pasar la historia del papel a la pantalla poniendo su
+                                visión al
+                                servicio del resto de departamentos.</p>
+                        </div>
+                    </div>
 
-            <h3> Departamento Cámara</h3>
 
-            Todos esenciales para tomar decisiones artísticas y técnicas sobre la imagen.
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Ayudante de Dirección de Cine</b> </span>
+                            <p class="card-text"> Es la mano derecha del director de un proyecto audiovisual (serie,
+                                película...).
+                                Este profesional ayudará a que el proyecto que el director tenga en mente salga adelante
+                                según
+                                lo
+                                acordado, en unos tiempos y ritmos de rodaje previstos .</p>
+                        </div>
+                    </div>
 
-            <div class="contenedor">
-                <div class="grid-container">
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> VFX</b> </span>
+                            <p class="card-text">El supervisor de VFX se encarga de que lo que se rueda sirva para poder
+                                llevar
+                                a
+                                cabo una postpo sin contratiempos</p>
+                        </div>
+                    </div>
+
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> ARTE</b> </span>
+                            <p class="card-text">Diseñan/eligen tanto los decorados como el atrezo de los personajes,
+                                velando
+                                siempre por la unidad estilística de la historia y el raccord.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="titulo"> Departamento Cámara</h3>
+
+                <p class="desaparecio"> Todos esenciales para tomar decisiones artísticas y técnicas sobre la imagen.
+                </p>
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                <div class="grid-container-profesiones">
+
+
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-fotografia.png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Dire de foto </b> </span>
-                            <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la
-                                producción
-                                deciden
-                                qué se rueda, cuándo y en qué orden.</p>
+                            <p class="card-text">El director de fotografía dirigirá los equipos de cámara, iluminación y agarre para configurar y operar todos sus equipos. Durante la toma, muchos directores de fotografía elegirán operar la cámara ellos mismos.</p>
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Videoassist</b> </span>
-                            <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la
-                                producción
-                                deciden
-                                qué se rueda, cuándo y en qué orden.</p>
+                            <p class="card-text">El vídeo asistente (playback technician en inglés) es la persona encargada de asegurarse de que la señal de vídeo y audio no tengan problemas de retrasos (delay en inglés) desde la cámara a todos los dispositivos destinados a mostrar la imagen que se está rodando en ese momento.</p>
                         </div>
                     </div>
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Maquinistas</b> </span>
@@ -148,43 +145,64 @@
                     </div>
                 </div>
 
-                <h3> Departamento Sonido</h3>
-                Responsables de captar el sonido directo de la manera más clara posible, para que no haya problemas en
-                postpo.
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Sonido</h3>
+                <p class="desaparecio"> Responsables de captar el sonido directo de la manera más clara posible, para
+                    que no
+                    haya
+                    problemas en
+                    postpo. </p>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
-                            <span> <b> Dirección</b> </span>
-                            <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la
-                                producción
-                                deciden
-                                qué se rueda, cuándo y en qué orden.</p>
+                            <span> <b> Tecnico de sonido</b> </span>
+                            <p class="card-text">El Técnico de Sonido es el profesional encargado de que la captación, grabación y/o reproducción de sonido se realice de forma óptima.</p>
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
-                            <span> <b> Dirección</b> </span>
-                            <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la
-                                producción
-                                deciden
-                                qué se rueda, cuándo y en qué orden.</p>
+                            <span> <b> Microfonista</b> </span>
+                            <p class="card-text">Se encarga de manipular el micrófono buscando siempre obtener el sonido más claro y limpio posible, según las necesidades del director y del supervisor de sonido.</p>
+                        </div>
+                    </div>
+
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Diseñador de sonido y efectos sonoros</b> </span>
+                            <p class="card-text">Un diseñador de sonido es alguien que crea experiencias sonoras para el público. Se puede definir como alguien que literalmente crea sonidos individuales que no existen, pero el término también se aplica a alguien que crea la banda sonora general de un medio de comunicación.</p>
+                        </div>
+                    </div>
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Editor de diálogos</b> </span>
+                            <p class="card-text">Un editor de diálogo es el responsable de todos los sonidos que se registraron durante el rodaje. Es quien recibe el film más o menos editado, que le proporciona el editor de imágenes, y le da sentido a los sonidos editados, los organiza, busca lo que funciona y lo que no.</p>
+                        </div>
+                    </div>
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Editor de ADR</b> </span>
+                            <p class="card-text">A este trabajo se le conoce como ADR (por sus siglas en inglés Automated Dialoge Replacement), y consiste, básicamente, en grabar los diálogos de los actores en un estudio de sonido, una vez ha terminado el rodaje del producto audiovisual.</p>
                         </div>
                     </div>
                 </div>
 
-                <h3> Departamento Producción</h3>
-                Primeros en llegar, últimos en irse. Proveen de todo lo necesario al resto de departamentos tanto en pre
-                como en
-                rodaje.
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Producción</h3>
+                <p class="desaparecio"> Primeros en llegar, últimos en irse. Proveen de todo lo necesario al resto de
+                    departamentos
+                    tanto en pre
+                    como en
+                    rodaje.</p>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Productor/a</b> </span>
@@ -194,7 +212,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Director audiovisual.
@@ -207,7 +225,7 @@
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Localizaciones</b> </span>
@@ -219,11 +237,11 @@
                         </div>
                     </div>
                 </div>
-                <h3> Departamento Maquillaje</h3>
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Maquillaje</h3>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b>Maquillaje y peluqeuría </b> </span>
@@ -235,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> FX make up</b> </span>
@@ -246,11 +264,11 @@
                     </div>
                 </div>
 
-                <h3> Departamento Vestuario</h3>
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Vestuario</h3>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Vestuario</b> </span>
@@ -262,23 +280,21 @@
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
-                            <span> <b> Dirección</b> </span>
-                            <p class="card-text">Manejan los tiempos basándose en el plan de rodaje. Junto con la
-                                producción
-                                deciden
-                                qué se rueda, cuándo y en qué orden.</p>
+                            <span> <b> El asistente en vestuario</b> </span>
+                            <p class="card-text">se encarga de la clasificación del vestuario,
+                                de la continuidad, se distribuyen por actores, extras.</p>
                         </div>
                     </div>
                 </div>
 
-                <h3> Departamento Eléctricos</h3>
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Eléctricos</h3>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Eléctricos</b> </span>
@@ -290,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Special FX</b> </span>
@@ -304,11 +320,11 @@
 
 
                 </div>
-                <h3> Departamento Especialistas</h3>
-                <div class="grid-container">
+                <h3 class="titulo"> Departamento Especialistas</h3>
+                <div class="grid-container-profesiones">
 
 
-                    <div class="card grid-item " style="width: 18rem;">
+                    <div class="card grid-item " style="width: 15rem;">
                         <img src="imagenes/director-de-cine (1).png" class="cHeaderard-img-top" alt="...">
                         <div class="card-body">
                             <span> <b> Especialista</b> </span>
@@ -320,14 +336,25 @@
                         </div>
                     </div>
                 </div>
+
+                <h3 class="titulo"> Actor/a</h3>
+                <div class="grid-container-profesiones">
+
+
+                    <div class="card grid-item " style="width: 15rem;">
+                        <img src="imagenes/actriz.png" class="cHeaderard-img-top" alt="...">
+                        <div class="card-body">
+                            <span> <b> Actor</b> </span>
+                            <p class="card-text">Los/las actores/actrices dan vida a los personajes en el teatro, el cine, la televisión y la radio, o en otras actividades relacionadas con el mundo audiovisual (como la publicidad).
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex-item-derecha">
-            <form action="">
-                <input type="comentario"> <img src="imagenes/chat.png" alt="img de comentario">
-            </form>
-        </div>
+
     </div>
+
     <!-- footer-->
     <div id="footer"></div>
 </body>

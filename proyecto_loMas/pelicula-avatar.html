@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shova Shrestha">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analisis de la pelicula 'El viaje de Chihiro'">
+    <meta name="keywords" content="Pelicula chihiro series">
+    <title>LoMas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- bootStrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="icon" href="img/camara-de-cine (1).png">
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <!-- Header-->
+    <div id="header"></div>
+
+    <!-- Header-->
+    <div class="container">
+        <h1 class="titulo"> <b> Avatar 2: El sentido del agua </b></h1>
+        <div class="row">
+
+            <div class="col-3" id="block">
+
+                <label class="buscar-genero"> <b> Busqueda por genero </b></label>
+                
+                <form >
+                    <label for="generos">Elige el Genero</label>
+                    <select name="generos" id="genero">
+                      <option value="accion">Acción</option>
+                      <option value="aventura">Aventura</option>
+                      <option value="animacion">Animación</option>
+                      <option value="fantasia">Fantasía</option>
+                      <option value="ciencia">Ciencia ficción</option>
+                      <option value="comedia">Comedia</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+                  <form >
+                    <label for="cars">Elige por fecha </label>
+                    <select name="cars" id="cars">
+                      <option value="dosmil">2000</option>
+                      <option value="dosmiluno">2001</option>
+                      <option value="dosmildos">2002</option>
+                      <option value="dosmiltres">2003</option>
+                      <option value="dosmilcuatro">2004 </option>
+                      <option value="dosmilcinco">2005</option>
+                    </select>
+                    <br><br>
+                    
+                  </form>
+
+
+                <label class=""> <b>Comentarios </b> </label>
+                <input type="text" id="coment" value="comentario">
+                <button type="submit" class="enviar" onclick="añadirComentario()">
+                    <img class="img-coment" src="imagenes/chat.png" alt="img de comentario">
+                </button>
+            </div>
+
+            <div class="col-9 analisis" id="block">
+                <img src="img/Avatar2.jpg" class="img-pel" alt="portada de la pelicula  Avatar 2">
+
+                <div>
+                    <h3 class="titulo ">Reseña</h3>
+                    <p class="reseña">
+
+                        En Avatar 2: el sentido del agua, el tiempo es importante. Diez años han transcurrido desde que
+                        Jake
+                        Sully (Sam Worthington) recibiera el prodigio de Eywa en el Árbol de la Vida. Su identidad
+                        humana
+                        desapareció o, mejor dicho, evolucionó a una comunión total con Pandora.
+
+                        Su mirada es la de un Na’vi y esa es la gran revelación que el argumento escrito por James
+                        Cameron, Rick
+                        Jaffa y Amanda Silver deja clara. El espíritu aventurero del personaje es un reflejo de su
+                        planeta
+                        adoptivo.
+
+                        También del misterio cálido que envuelve cada elemento que le rodea. Tal y como la primera
+                        película
+                        manifestó en el 2009, nada en este entorno poderoso está desvinculado del centro mismo de la
+                        vida. Nada
+                        está fuera del asombro que envuelve y sostiene la narración como una travesía hacia un paraje de
+                        desconcertante belleza.
+                        <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FSyWAxUg3Go"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="titulo">Análisis</h3>
+                    <p class="reseña">
+
+                        Que 'Avatar: El sentido del agua' va a ser un éxito es algo que prácticamente nadie duda a día
+                        de hoy. Ni siquiera el elevado coste de la película de James Cameron va a ser un impedimento
+                        para ello. La cosa cambia a la hora de determinar si se trata o no de una buena película. Ahí
+                        cada espectador tendrá su propia opinión y en mi caso ha servidor para dejar claro que ni
+                        siquiera el director de 'Terminator' o 'Mentiras arriesgadas' es infalible.
+
+                        Por lo pronto es verdad que 'Avatar' seguramente sea su película que menos me gustaba hasta
+                        ahora, pero tenía algo único, presentaba un universo con muchos posibilidades y era un
+                        espectáculo visual impresionante. Por ello era más fácil pasar por alto una historia demasiado
+                        sencilla para su abultado metraje, pero con 'Avatar 2' había llegado el momento de dar un paso
+                        adelante y eso nunca termina de suceder.
+                        <br> <br> <br>
+                        'Avatar 2' y que incluso descartó una primera versión del guion porque no tenía todos los
+                        elementos necesarios para ello. Sin embargo, lo que me hacía tener más esperanzas era el hecho
+                        de que él mismo destacaba que la historia iba a ser mucho más ambiciosa y que "El objetivo es
+                        contar una historia extremadamente absorbente en términos emocionales". Por ahí llega el primer
+                        fracaso de 'El sentido del agua'.
+
+                        Es cierto que en 'Avatar: El sentido del agua' hay más personajes con cierto peso en la
+                        historia, pero eso no supone que estén bien desarrollados. Ahí ni siquiera el hecho de que
+                        Cameron no escriba en solitario el guion -aquí cuenta con la ayuda de Amanda Silver y Rick
+                        Jaffa, el mismo dúo detrás del libreto de 'El origen del planeta de los simios'- ha servido para
+                        que los protagonistas tengan gancho.
+                        <br> <br> <br>
+                        Ahí la película sufre una alarmante falta de naturalidad e incluso destruyen una de las pocas
+                        virtudes de la primera entrega en este punto, ya que esa naturaleza guerrera de Neytiri brilla
+                        por su ausencia durante la mayor parte del relato para relegarla al rol de madre preocupada.
+                        Lógico por la historia planteada pero totalmente insatisfactorio en su ejecución.
+                        <br> <br> <br>
+                        Eso es algo que se acaba trasladando a la propia historia, donde llega un momento en el que
+                        'Avatar: El sentido del agua' casi parece un remake encubierto de la primera entrega. Sí, se
+                        amplía el mundo de Pandora, tanto en términos sociales como de las criaturas que lo habitan,
+                        pero acaba sintiéndose demasiado similar a lo que ya vimos en su predecesora.
+
+                        Y al final todo acaba reducido a un inevitable enfrentamiento contra los humanos opresores,
+                        reincidiendo nuevamente en esa aparente contradicción en la que no deja de caer la saga, ya que
+                        por un lado es una celebración de la naturaleza y por otro una fantasía militar. Lo peor de todo
+                        en este punto es que 'Avatar 2' acaba sintiéndose como una aventura de transición para preparar
+                        la inevitable tercera entrega.
+                        <br> <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer-->
+
+    <div id="footer"></div>
+    <!-- Footer-->
+</body>
+
+</html>
